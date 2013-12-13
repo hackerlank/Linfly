@@ -1,79 +1,111 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>个人网站——首页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+<!--
+.STYLE3 {color: #666666}
+-->
+</style>
+<script type="text/javascript">
+ 	function setImage()
+	{
+		var c_image = document.getElementById("touxiang"); //获取img
+		var selobj = document.getElementById("sel"); //获取select		
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Linfly : " />
+		//alert(selobj.value); //提示获取值
+		
+		c_image.src="blog/img/touxiang/"+selobj.value +".gif";
+	}
+</script>
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Linfly</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Linfly/Linfly">View on GitHub</a>
-
-          <h1 id="project_title">Linfly</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Linfly/Linfly/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Linfly/Linfly/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we鈥檒l help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Linfly maintained by <a href="https://github.com/Linfly">Linfly</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<body>
+<div class="main">
+		<div class="top">收藏本站 | 联系站长</div>
+		<div><img src="img/vi.jpg" width="800" /></div>
+  <div id="title1">成功没有早晚</div>
+		<div id="title2">努力就有收获</div>
+		<div class="navMenu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="bar">|</li>
+				<li><a href="rizhi.html">日志</a></li>
+				<li class="bar">|</li>
+				<li><a href="xiangce.html">相册</a></li>
+				<li class="bar">|</li>
+				<li style="letter-spacing:0px;"><a href="grda.html">个人档案</a></li>
+				<li class="bar">|</li>
+				<li><a href="liuyan.html">留言</a></li>
+			</ul>
+		</div>
+<div class="divTable" style="width:220px;">
+			<div class="title">
+			  <div align="center">|用户登录</div>
+			</div>
+			<div class="mar"> 
+			  <div align="center"><strong>用户名:</strong>
+		        <input name="textfield" type="text" class="bk" style="margin-top:10px;" size="15" />
+		        <br/>			            
+			      <strong>密 &nbsp;码:</strong>
+		        <input name="textfield2" type="password"  class="bk" style="margin-top:10px;" size="15" />
+		      </div>
+	  <form id="form1" name="form1" method="post" action="">
+	    <input type="submit" name="Submit" value="       登陆       " style="background-color:#FFFFFF" />
+	  </form>
+	  <form id="form1" name="form1" method="post" action="zhuce.html">
+	    <input type="submit" name="Submit2" value="       注册       " style="background-color:#FFFFFF" />
+	  </form>
+	</div>
+</div>
+<div class="divzui" style="width:570px;">
+  <div class="zk" style="text-align:left;">|最新日志</div>
+  <div style="padding:5px;">&nbsp;&nbsp;<strong>Internet技术的应用</strong></div>
+  <div class="zu">&nbsp;&nbsp;&nbsp;2009年05月08 23:35</div>
+  <div>----------------------------------------------------------------------------------------------</div>
+  <div style="text-indent:20px;">
+在信息技术发达的今天,读者每天的可以感受到Internet技术在生活中的巨大作用。通过Internet,<br/>   读者可以每天浏览到最新的新闻，可以参加与论坛各种话题火热的讨论可以和世界各地的朋友一起玩游戏等。
+    <br/><br/>
+    <br/>
+  </div>
+  <div>
+    <hr/>
+    &nbsp; <strong>网页技术学前班</strong><br/>
+    &nbsp; <span class="STYLE3">2009年05月08 23:35 </span><br/>
+    ----------------------------------------------------------------------------------------------<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;Internet,中文称为国际互联网。众所周知，Internet起源于1969年，由美国国防部授权ARPANET<br/>
+    （高级研究规划署）进行的互联网的试验。当初没有人会预料到，在几十年后的今天，互联网成了全球互通的主要方式。网页是Internet最主要的组成部分，在本章读者可以学到很多Internet及网页制作方面的基础知识，TCP/IP协议使用客户端/服务器模式进行通信。TCP/IP通信时点对点的，即通信是网络中一台主机与另一台主机之间的。读者要了解是，当前Internet上数据都是通过TCP/IP在网络上进行控制的。<br/><br/><br/><br/>
+    <br/>
+    <br/>
+  </div>
+</div>
+<div class="divTable"style="width:220px;">
+ 	<div class="title">|最新留言</div>
+	<div class="mar">◆多拍点相片啊，大家分.......<br/>
+	  -----------------------------<br/>
+	◆相片很好看，真的，不.......<br/>
+	-----------------------------<br/>
+	◆能否放一点北京奥运会.......<br/>
+	-----------------------------<br/>
+	◆还行了,虽然简单了一........<br/>
+	-----------------------------<br/>
+	◆嗯，不错，看来学习网.......<br/>
+	-----------------------------</div>	
+</div>
+<div class="divTable">
+	<div class="title" style="width:800px;">|最新相片</div>
+	<div class="mar">
+	<marquee direction="left" scrollamount="5">
+	<div align="left"><img src="img/l_01.jpg" width="100" height="100" />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/l_02.jpg" width="100" height="100" />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+	    <img src="img/l_03.jpg" width="100" height="100" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	    <img src="img/l_04.jpg" width="100" height="100" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <img src="img/l_05.jpg" width="100" height="100" /></div>
+	</marquee>
+	</div>
+</div>
+<div class="bottom">本网站版权为重庆足下所有</div>
+ 
+</div>
+</body>
 </html>

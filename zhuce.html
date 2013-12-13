@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>个人网站——日志</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+.STYLE3 {font-size: 18px}
+-->
+</style>
+<script type="text/javascript">
+     function jiancha()
+	{
+        var myform = document.myform;
+        var name = myform.txtname.value;
+		if(name.length>5 && name.length<20)
+		{
+		alert("恭喜你此用户名可用");
+		}
+		else
+		{
+		alert("您的用户名不是6-20位!");
+		}
+	}
+ 
+    function zzk()
+	{
+        var myform = document.myform;
+		var name = myform.txtname.value;
+		var zsname = myform.zsname.value;
+		var pwd1 = myform.pwd1.value;
+		var pwd2 = myform.pwd2.value;
+		var tel = myform.tel.value;
+		var cq = myform.cq.value;
+		var email = myform.email.value;
+		var index = myform.index.value;
+		var dizhi = myform.dizhi.value;
+		
+		if(name=="" || name.length>20 || name.length<6)
+		{
+			alert("您的用户名不是6-20位");
+			return false;
+		}
+		if(zsname=="")
+		{
+			alert("姓名不能为空");
+			return false;
+		}
+		if(pwd1=="" || pwd1.length>20 || pwd1.length<6)
+		{
+			alert("请输入6-20位的密码");
+			return false;
+		}
+		if(pwd1!=pwd2)
+		{
+			alert("两次密码不一致");
+			return false;
+		}
+		if(tel.length!=11)
+		{
+			alert("电话号码必须为11位的手机或者座机号");
+
+			return false;
+		}
+		if(cq.length<5 || cq.length>10)
+		{
+	             alert("请输入5-10位的OICQ号");                 return false;
+		}
+		if(email.indexOf(".")==-1 || email.indexOf("@")==-1)
+		{
+			alert("邮件格式不正确");
+			return false;
+		}
+		if(index=="")
+		{
+			alert("个人主页不能为空");
+			return false;
+		}
+		if(dizhi=="")
+		{
+			alert("联系地址不能为空~！");
+			return false;
+		}
+		else
+		{
+		 document.write("<b><h1>恭喜您,注册成功！</h1></b>");
+		 document.write("<br /><h3>请保管好您的注册信息！</h3></b>");
+		 document.write("<br /><br /><b>用户名:</b>"+name);
+		 document.write("<br /><br /><b>密码:</b>"+pwd1);
+		 document.write("<br /><br /><b>联系电话:</b>"+tel);
+		 document.write("<br /><br /><b>OICQ:</b>"+cq);
+		 document.write("<br /><br /><b>email:</b>"+email);
+		 document.write("<br /><br /><b>个人主页:</b>"+index);
+		 		 document.write("<br /><br /><b>联系地址:</b>"+dizhi);
+		}
+	}
+</script>
+</head>
+
+<body>
+<div class="main">
+		<div class="top">收藏本站 | 联系站长</div>
+		<div><img src="img/vi.jpg" width="800" /></div>
+  <div id="title1">成功没有早晚</div>
+		<div id="title2">努力就有收获</div>
+		<div class="navMenu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="bar">|</li>
+				<li><a href="rizhi.html">日志</a></li>
+				<li class="bar">|</li>
+				<li><a href="xiangce.html">相册</a></li>
+				<li class="bar">|</li>
+				<li style="letter-spacing:0px;"><a href="grda.html">个人档案</a></li>
+				<li class="bar">|</li>
+				<li><a href="liuyan.html">留言</a></li>
+			</ul>
+		</div>
+ <div class="zhuce" style="width:798px;">
+     <div class="zhucea">|用户注册</div>
+	 <div class="zhuceb">
+	   <p>&nbsp;</p>
+	   <p>&nbsp;</p>
+	   <p>&nbsp;</p>
+	   <blockquote>
+	     <p><strong>用户名</strong>:为用户登陆在线博客的通行证，可以是英文字符、数字或数字、英文字母、下划线的组合。<br />
+	       -------------------<br />
+	       <strong>真实姓名</strong>:该项为隐藏项，用户可以放心输入。<br />
+	       -------------------<br />
+	       <strong>密码</strong>:设定在6-20位之间，登陆及确认密码必须一致。<br />
+	       -------------------<br />
+	       <strong>头像:</strong>可通过头像下拉列表框选择头像。<br />
+	       -------------------<br />
+	       <strong>E-mail</strong>:请填写有效的E-mail，以便我们与您联系。<br />
+	       -------------------<br />
+           </p>
+       </blockquote>
+	 </div>
+	<div class="zhucec">
+      <div>
+	      <p>&nbsp;</p>
+	      <p>&nbsp; </p>
+          
+		   <form name="myform" method="post" action="">
+            <p>用 户 名:
+              <input name="txtname" type="text" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span>
+              <input type="button" name="Submit" value="检查用户名是否存在" style="background:url(img/bg.jpg);" onclick="jiancha();"/>
+              <br />
+              真实姓名:
+              <input name="zsname" type="text" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span><br />
+              密  &nbsp;&nbsp; 码:
+              <input name="pwd1" type="password" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span><br />
+              密码确认:
+              <input name="pwd2" type="password" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span><br />
+              性   &nbsp;&nbsp; 别:
+              <input name="sex" type="radio" checked="checked" value="男" />男
+              <input type="radio" name="sex" value="女" />女
+              <span class="STYLE1">*</span><br />
+              联系电话:
+              <input name="tel" type="text" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span><br />
+              OI CQ 号: <strong> </strong>
+              <input name="cq" type="text" class="bk" style="margin-top:10px;" size="15" />
+              <span class="STYLE1">*</span><br />
+              
+              选择头像:
+		   
+  <img src="img/touxiang/9.gif" name="tx">
+            
+               
+  <SELECT onChange="document.tx.src=options[selectedIndex].value">
+            
+              <option value="img/touxiang/9.gif">请选择头像</option>
+              <option value="img/touxiang/1.gif">头像1</option>
+              <option value="img/touxiang/2.gif">头像2</option>
+              <option value="img/touxiang/3.gif">头像3</option>
+			  <option value="img/touxiang/4.gif">头像4</option>
+			  <option value="img/touxiang/5.gif">头像5</option>
+			  <option value="img/touxiang/6.gif">头像6</option>
+			  <option value="img/touxiang/7.gif">头像7</option>
+			  <option value="img/touxiang/8.gif">头像8</option>
+            </select>
+      
+              <span class="STYLE3">签名:</span>
+              <textarea name="textarea" rows="6"></textarea>
+              <br />
+              E - mail:<strong> </strong>
+              <input name="email" type="text" class="bk" style="margin-top:10px;" size="50" />
+              <span class="STYLE1">*</span><br />
+              个人主页:	        
+              <input name="index" type="text" class="bk" style="margin-top:10px;" size="50" />
+              <br />
+              联系地址:	        
+              <input name="dizhi" type="text" class="bk" style="margin-top:10px;" size="50" />
+            <span class="STYLE1">*</span></p>
+          <form name="myform">
+              <input type="button" name="Submit2" value="确认提交" style="background:url(img/bg.jpg)" onclick="zzk();" />
+              <input type="reset" name="Submit22" value="重新填写" style="background:url(img/bg.jpg)" />
+            </form>
+			 </div> </form>
+</div>
+
+
+
+        <div class="bottom">本网站版权为重庆足下所有</div>
+ 
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>个人网站——留言版</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+<!--
+.STYLE5 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.STYLE7 {font-size: 18px; font-weight: bold; }
+-->
+</style>
+<script>
+	
+	function Liuyan()	
+	{
+		var sr = document.getElementById("aliuyan"); //获取输入的值
+		
+		var hq = document.getElementById("liuyan"); //获取留言
+		var cdate = new Date();
+		var str = cdate.getYear()+"-";
+		str+=(cdate.getMonth()+1)+"-";
+		str+=cdate.getDate()+" ";
+		str+=cdate.getHours()+":";
+		str+=cdate.getMinutes()+":05";
+		hq.value += "\n匿名:"+sr.value+"\n"+str;
+	}
+	</script>
+</head>
+
+<body>
+<div class="main">
+		<div class="top">收藏本站 | 联系站长</div>
+		<div><img src="img/vi.jpg" width="800" /></div>
+  <div id="title1">成功没有早晚</div>
+		<div id="title2">努力就有收获</div>
+		<div class="navMenu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="bar">|</li>
+				<li><a href="rizhi.html">日志</a></li>
+				<li class="bar">|</li>
+				<li><a href="xiangce.html">相册</a></li>
+				<li class="bar">|</li>
+				<li style="letter-spacing:0px;"><a href="grda.html">个人档案</a></li>
+				<li class="bar">|</li>
+				<li><a href="liuyan.html">留言</a></li>
+			</ul>
+		</div>
+	 <div class="xiangce" style="width:798px;">
+         <div class="xiangcea STYLE1"> |网友留言</div>
+		 
+	   <div align="left">
+
+		     <p align="center"><span class="STYLE7"> 最新留言          </span>	               </p>
+		     <form id="form1" name="form1" method="post" action="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		     
+		         <textarea id="liuyan" name="textarea" cols="88" rows="17" style="border:none" style="background-image:url(img/Peace.jpg)" overflow:hidden; background:#FFFFFF">匿名:多拍点相片啊，大家分享一下吧！真好看！！！
+2008-4-24 04:36:23
+匿名:相片真好看，真的，不过就时太少来一点哦，可惜！
+2008-7-21 15:23:43
+匿名:能否放一点北京奥运会的照片啊，嘿嘿！
+2008-9-14 11:01:56
+匿名:还行来，虽然简单了一点，已经不错咯！哈哈
+2008-10-25 01:01:25
+匿名:嗯，不错，看来学习网页设计，挺有钱途的！
+2009-4-20 19:41:10 </textarea>
+		           
+                           </p>
+		     </form>
+		     <p align="center" class="STYLE7">请输入留言</p>
+		     <p align="justify" class="STYLE5">
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		       <textarea id="aliuyan" name="textarea2" cols="88" rows="7"></textarea>
+		     </p>
+		     <form id="form2" name="form2" method="post" action="">
+		       <label>
+			   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		         &nbsp;<input  type="button" name="Submit" value="确定留言"  style="background:url(img/bg.jpg)" onclick="Liuyan();" />
+	           </label>
+         </form>
+		     <p align="justify" class="STYLE5">&nbsp;</p>
+	   </div>
+		   <div class="bottom">本网站版权为重庆足下所有</div>
+ 
+</div>
+</body>
+</html>
